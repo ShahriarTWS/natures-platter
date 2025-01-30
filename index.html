@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nature's platter</title>
+    <link rel="shortcut icon" href="c2-assets/logo-n.png" type="image/x-icon">
+
+    <!-- ================================================================== -->
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+    <style>
+        .sora-font {
+            font-family: "Sora", serif;
+        }
+    </style>
+    <!-- ================================================================== -->
+
+
+    <!-- =================================================================== -->
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/1c9ff852c0.js" crossorigin="anonymous"></script>
+    <!-- =================================================================== -->
+
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- =================================== -->
+    <!-- custom color -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'accent-color': '#179800',
+                        'secondary-color': '#EFEBE3',
+                        'nature-txt-color': '#111111',
+                        'gd-down': '#EFEBE3',
+                        'gd-top': '#FFFFFF',
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- =================================== -->
+
+</head>
+
+<body class="sora-font">
+    <header class="bg-gradient-to-t from-gd-down to-gd-top">
+        <!-- ================navbar -->
+        <section>
+            <nav class="border border-accent-color md:border-none">
+                <div
+                    class="w-[90%] md:w-[100%] md:container mx-auto flex justify-between items-center pt-1 pb-1 md:pt-7">
+                    <div>
+                        <img class="md:hidden" src="c2-assets/logo-n.png" alt="">
+                        <img class="hidden md:flex" src="c2-assets/logo-header.png" alt="">
+                    </div>
+                    <div>
+                        <ul class="hidden md:flex space-x-8 text-base items-center text-nature-txt-color">
+                            <li><a href="">Product</a></li>
+                            <li><a href="">Services</a></li>
+                            <li><a href="">Contact us</a></li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="hidden md:flex space-x-6 text-base items-center">
+                            <li class="text-xl"><a href=""></a><i class="fa-solid fa-magnifying-glass"></i></li>
+                            <li class="text-xl"><a href=""></a><i class="fa-solid fa-cart-shopping"></i></li>
+                            <li
+                                class="btn btn-outline border-accent-color text-nature-txt-color text-base hover:border-accent-color hover:bg-accent-color hover:text-white">
+                                <a href="">Login</a>
+                            </li>
+                            <li
+                                class="btn text-base text-white bg-accent-color border-accent-color hover:border-accent-color hover:bg-transparent hover:text-black">
+                                <a href="">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="md:hidden">
+                        <button class="text-xl"><i class="fa-solid fa-bars"></i></button>
+                    </div>
+                </div>
+            </nav>
+        </section>
+        <!-- ======================navbar end -->
+
+        <!-- ========================================== -->
+        <!-- hero section -->
+        <section class="mt-20 space-y-9 w-[90%] mx-auto">
+            <div class="text-center">
+                <h1 class="text-[2rem] font-semibold md:text-[3.5rem]">Freshness <span class="text-accent-color">You Can
+                        <br> Count</span> On, Prices You’ll Love!</h1>
+                <p class="pt-4 md:pt-8 md:w-[45%] mx-auto text-xl">Shop your daily essentials at unbeatable prices. From
+                    fresh produce to pantry staples, we’ve got you covered every day!</p>
+            </div>
+            <div class="flex justify-center mx-auto"><img src="c2-assets/hero-vegetables.png" alt=""></div>
+        </section>
+        <!-- hero section end-->
+        <!-- ========================================== -->
+
+
+    </header>
+
+    <main>
+        <!-- ====================== -->
+         <!-- service -->
+          <section class="w-[90%] md:w-[100%] md:container mx-auto pt-12 pb8 md:pt-28">
+            <h2 class="text-accent-color font-semibold text-4xl ">Services</h2>
+            <div class=" grid grid-cols-1 md:grid-cols-3 gap-8 justify-between items-center pt-1 pb-1 md:pt-7">
+                <!-- card 1 start -->
+                <div>
+                    <div class="bg-secondary-color card  shadow m-auto">
+                          <div>
+                            <img
+                            src="c2-assets/service.png"
+                            alt="Shoes"
+                            class="rounded-[50%] p-3 bg-white mx-auto mt-8" />
+                          </div>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title text-nature-txt-color font-semibold text-xl md:text-2xl">24/7 Services </h2>
+                          <p class="font-light md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                      </div>
+                </div>
+                <!-- card 1 end -->
+
+
+                <!-- card 1 start -->
+                <div>
+                    <div class="bg-secondary-color card  shadow m-auto">
+                          <div>
+                            <img
+                            src="c2-assets/service.png"
+                            alt="Shoes"
+                            class="rounded-[50%] p-3 bg-white mx-auto mt-8" />
+                          </div>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title text-nature-txt-color font-semibold text-xl md:text-2xl">24/7 Services </h2>
+                          <p class="font-light md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                      </div>
+                </div>
+                <!-- card 1 end -->
+
+
+                <!-- card 1 start -->
+                <div>
+                    <div class="bg-secondary-color card  shadow m-auto">
+                          <div>
+                            <img
+                            src="c2-assets/service.png"
+                            alt="Shoes"
+                            class="rounded-[50%] p-3 bg-white mx-auto mt-8" />
+                          </div>
+                        <div class="card-body items-center text-center">
+                          <h2 class="card-title text-nature-txt-color font-semibold text-xl md:text-2xl">24/7 Services </h2>
+                          <p class="font-light md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                        </div>
+                      </div>
+                </div>
+                <!-- card 1 end -->
+
+
+
+
+                
+            </div>
+          </section>
+    </main>
+
+    <footer>
+
+    </footer>
+</body>
+
+</html>
