@@ -11,11 +11,41 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+        rel="stylesheet">
 
     <style>
         .sora-font {
             font-family: "Sora", serif;
+        }
+
+        .adlam-font {
+            font-family: "ADLaM Display", serif;
+        }
+
+        @keyframes colorFade {
+
+            0%,
+            100% {
+                color: #111111;
+            }
+
+            50% {
+                color: #179800;
+            }
+        }
+
+        .animate-color-change {
+            animation: colorFade 2s infinite ease-in-out;
+        }
+
+        #veg-offer {
+            background:
+                url(c2-assets/vegetable-offer.png) bottom right no-repeat,
+                /* Background Image */
+                linear-gradient(to bottom right, #53DB3A, #FFFFFF);
+            /* Gradient */
+            background-size: 220px auto, cover;
         }
     </style>
     <!-- ================================================================== -->
@@ -28,6 +58,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+
 
     <!-- =================================== -->
     <!-- custom color -->
@@ -62,17 +93,26 @@
                         <img class="md:hidden" src="c2-assets/logo-n.png" alt="">
                         <img class="hidden md:flex" src="c2-assets/logo-header.png" alt="">
                     </div>
-                    <div>
+                    <!-- <div>
                         <ul class="hidden md:flex space-x-8 text-xl items-center text-nature-txt-color">
                             <li class="hover:text-accent-color"><a href="">Product</a></li>
                             <li class="hover:text-accent-color"><a href="">Services</a></li>
                             <li class="hover:text-accent-color"><a href="">Contact us</a></li>
                         </ul>
-                    </div>
-                    <div>
+                    </div> -->
+                    <div class="flex space-x-12">
+                        <ul class="hidden md:flex space-x-8 text-xl items-center text-nature-txt-color md:mr-44">
+                            <li class="hover:text-accent-color"><a href="">Product</a></li>
+                            <li class="hover:text-accent-color"><a href="">Services</a></li>
+                            <li class="hover:text-accent-color"><a href="">Contact us</a></li>
+                        </ul>
                         <ul class="hidden md:flex space-x-6 text-2xl items-center">
-                            <li class="text-xl"><a href=""></a><i class="fa-solid fa-magnifying-glass"></i></li>
-                            <li class="text-xl"><a href=""></a><i class="fa-solid fa-cart-shopping"></i></li>
+                            <li
+                                class="text-xl transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-105 hover:text-accent-color duration-300">
+                                <a href=""></a><i class="fa-solid fa-magnifying-glass"></i></li>
+                            <li
+                                class="text-xl transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-105 hover:text-accent-color duration-300">
+                                <a href=""></a><i class="fa-solid fa-cart-shopping"></i></li>
                             <li
                                 class="btn btn-outline px-7 py-2 border-accent-color text-nature-txt-color text-base hover:border-accent-color hover:bg-accent-color hover:text-white">
                                 <a href="">Login</a>
@@ -95,12 +135,13 @@
         <!-- hero section -->
         <section class="mt-20 space-y-9 w-[90%] mx-auto">
             <div class="text-center">
-                <h1 class="text-[2rem] font-semibold md:text-[3.5rem]">Freshness <span class="text-accent-color">You Can
+                <h1 class="text-[2rem] font-semibold md:text-[3.5rem] animate-color-change">Freshness <span
+                        class="text-accent-color">You Can
                         <br> Count</span> On, Prices You’ll Love!</h1>
                 <p class="pt-4 md:pt-8 md:w-[45%] mx-auto text-xl">Shop your daily essentials at unbeatable prices. From
                     fresh produce to pantry staples, we’ve got you covered every day!</p>
             </div>
-            <div class="flex justify-center mx-auto"><img src="c2-assets/hero-vegetables.png" alt=""></div>
+            <div class="flex justify-center mx-auto "><img src="c2-assets/hero-vegetables.png" alt=""></div>
         </section>
         <!-- hero section end-->
         <!-- ========================================== -->
@@ -116,7 +157,9 @@
             <div class=" grid grid-cols-1 md:grid-cols-3 gap-8 justify-between items-center pt-8 md:pt-12">
                 <!-- card 1 start -->
                 <div>
-                    <div class="bg-secondary-color card  shadow m-auto">
+                    <div
+                        class="bg-secondary-color card  shadow m-auto
+                    transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-105 hover:bg-[#3adb508f] duration-300">
                         <div>
                             <img src="c2-assets/service.png" alt="Shoes"
                                 class="rounded-[50%] p-3 bg-white mx-auto mt-8" />
@@ -124,8 +167,8 @@
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-nature-txt-color font-semibold text-xl md:text-2xl">24/7 Services
                             </h2>
-                            <p class="font-light md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt</p>
+                            <p class="font-light md:text-xl">We provide reliable, round-the-clock support, ensuring
+                                seamless service anytime, anywhere, every day.</p>
                         </div>
                     </div>
                 </div>
@@ -134,7 +177,9 @@
 
                 <!-- card 2 start -->
                 <div>
-                    <div class="bg-secondary-color card  shadow m-auto">
+                    <div
+                        class="bg-secondary-color card  shadow m-auto
+                    transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-105 hover:bg-[#3adb508f] duration-300">
                         <div>
                             <img src="c2-assets/delivery.png" alt="Shoes"
                                 class="rounded-[50%] p-3 bg-white mx-auto mt-8" />
@@ -142,8 +187,8 @@
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-nature-txt-color font-semibold text-xl md:text-2xl">Fast Delivery
                             </h2>
-                            <p class="font-light md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt</p>
+                            <p class="font-light md:text-xl">Quick and reliable shipping ensures your package arrives
+                                safely, on time, and hassle-free.</p>
                         </div>
                     </div>
                 </div>
@@ -152,7 +197,9 @@
 
                 <!-- card 3 start -->
                 <div>
-                    <div class="bg-secondary-color card  shadow m-auto">
+                    <div
+                        class="bg-secondary-color card  shadow m-auto
+                    transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-105 hover:bg-[#3adb508f] duration-300">
                         <div>
                             <img src="c2-assets/healthy.png" alt="Shoes"
                                 class="rounded-[50%] p-3 bg-white mx-auto mt-8" />
@@ -160,8 +207,8 @@
                         <div class="card-body items-center text-center">
                             <h2 class="card-title text-nature-txt-color font-semibold text-xl md:text-2xl">Healthy
                                 Products</h2>
-                            <p class="font-light md:text-xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                                sed do eiusmod tempor incididunt</p>
+                            <p class="font-light md:text-xl">Nutritious, organic, and wholesome products promoting
+                                wellness, vitality, and a balanced lifestyle.</p>
                         </div>
                     </div>
                 </div>
@@ -173,6 +220,177 @@
 
             </div>
         </section>
+        <!-- service end-->
+        <!-- ====================== -->
+
+        <!-- ======================= -->
+        <!-- product section -->
+        <div class="bg-secondary-color ">
+
+
+            <section class="w-[90%] md:w-[100%] md:container mx-auto pt-12 pb-12 md:pt-28 md:pb-28">
+                <h2 class="text-accent-color font-semibold text-2xl md:text-4xl ">Popular Products</h2>
+                <div class=" grid  gap-8 justify-between items-center pt-8 md:pt-12">
+
+                    <!-- products-9 -->
+                    <div class="grid grid-cols-2 md:grid-cols-4 col-span-2 gap-3 md:gap-6">
+
+                        <!-- ================================ -->
+                        <!-- =========vege -->
+                        <div id="veg-offer"
+                            class="flex relative col-span-2 md:col-span-1 md:row-span-3 bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] rounded-lg p-2 md:p-8 md:space-x-4
+                            transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-105 hover:bg-[#3adb508f] duration-300">
+                            <div>
+                                <h2 class="text-white text-3xl adlam-font pt-8 pb-4">30% off</h2>
+                                <p>Discover a world of treats, toys, and essentials handpicked for </p>
+                                <a href=""><button class="btn mt-4 mb-28 md:text-xl">Buy Now</button></a>
+                            </div>
+                        </div>
+                        <!-- =========vege -->
+                        <!-- ================================ -->
+
+                        <!-- =========pro 1 start -->
+                        <div
+                            class="flex bg-white rounded-lg p-2 space-x-2 md:p-4 md:space-x-4 items-center hover:bg-[#3adb508f] cursor-pointer">
+                            <div class="bg-secondary-color rounded-xl flex justify-center items-center">
+                                <img src="c2-assets/onion.png" alt="">
+                            </div>
+                            <div>
+                                <p class="nature-txt-color text-[0.625rem] md:text-base"><i
+                                        class="text-[#FFC107] fa-solid fa-star"></i> 4.5</p>
+                                <h2 class="text-xs md:text-xl nature-txt-color font-medium">Onion 1 KG</h2>
+                                <h2 class="font-medium text-[0.625rem] md:text-base">$39.99</h2>
+                            </div>
+                        </div>
+                        <!-- =========pro 1 end -->
+
+                        <!-- =========pro 2 start -->
+                        <div
+                            class="flex bg-white rounded-lg p-2 space-x-2 md:p-4 md:space-x-4 items-center hover:bg-[#3adb508f] cursor-pointer">
+                            <div class="bg-secondary-color rounded-xl flex justify-center items-center">
+                                <img src="c2-assets/tomato.png" alt="">
+                            </div>
+                            <div>
+                                <p class="nature-txt-color text-[0.625rem] md:text-base"><i
+                                        class="text-[#FFC107] fa-solid fa-star"></i> 4.5</p>
+                                <h2 class="text-xs md:text-xl nature-txt-color font-medium">Tomato 500 g </h2>
+                                <h2 class="font-medium text-[0.625rem] md:text-base">$39.99</h2>
+                            </div>
+                        </div>
+                        <!-- =========pro 2 end -->
+
+                        <!-- =========pro 3 start -->
+                        <div
+                            class="flex bg-white rounded-lg p-2 space-x-2 md:p-4 md:space-x-4 items-center hover:bg-[#3adb508f] cursor-pointer">
+                            <div class="bg-secondary-color rounded-xl flex justify-center items-center">
+                                <img src="c2-assets/potato.png" alt="">
+                            </div>
+                            <div>
+                                <p class="nature-txt-color text-[0.625rem] md:text-base"><i
+                                        class="text-[#FFC107] fa-solid fa-star"></i> 4.5</p>
+                                <h2 class="text-xs md:text-xl nature-txt-color font-medium">Potato 1 KG </h2>
+                                <h2 class="font-medium text-[0.625rem] md:text-base">$39.99</h2>
+                            </div>
+                        </div>
+                        <!-- =========pro 3 end -->
+
+                        <!-- =========pro 4 tomato start -->
+                        <div
+                            class="flex bg-white rounded-lg p-2 space-x-2 md:p-4 md:space-x-4 items-center hover:bg-[#3adb508f] cursor-pointer">
+                            <div class="bg-secondary-color rounded-xl flex justify-center items-center">
+                                <img src="c2-assets/tomato.png" alt="">
+                            </div>
+                            <div>
+                                <p class="nature-txt-color text-[0.625rem] md:text-base"><i
+                                        class="text-[#FFC107] fa-solid fa-star"></i> 4.5</p>
+                                <h2 class="text-xs md:text-xl nature-txt-color font-medium">Tomato 500 g </h2>
+                                <h2 class="font-medium text-[0.625rem] md:text-base">$39.99</h2>
+                            </div>
+                        </div>
+                        <!-- =========pro 4 tomato end -->
+
+                        <!-- =========pro 1 start -->
+                        <div
+                            class="flex bg-white rounded-lg p-2 space-x-2 md:p-4 md:space-x-4 items-center hover:bg-[#3adb508f] cursor-pointer">
+                            <div class="bg-secondary-color rounded-xl flex justify-center items-center">
+                                <img src="c2-assets/onion.png" alt="">
+                            </div>
+                            <div>
+                                <p class="nature-txt-color text-[0.625rem] md:text-base"><i
+                                        class="text-[#FFC107] fa-solid fa-star"></i> 4.5</p>
+                                <h2 class="text-xs md:text-xl nature-txt-color font-medium">Onion 1 KG</h2>
+                                <h2 class="font-medium text-[0.625rem] md:text-base">$39.99</h2>
+                            </div>
+                        </div>
+                        <!-- =========pro 1 end -->
+
+                        <!-- =========pro 4 tomato start -->
+                        <div
+                            class="flex bg-white rounded-lg p-2 space-x-2 md:p-4 md:space-x-4 items-center hover:bg-[#3adb508f] cursor-pointer">
+                            <div class="bg-secondary-color rounded-xl flex justify-center items-center">
+                                <img src="c2-assets/tomato.png" alt="">
+                            </div>
+                            <div>
+                                <p class="nature-txt-color text-[0.625rem] md:text-base"><i
+                                        class="text-[#FFC107] fa-solid fa-star"></i> 4.5</p>
+                                <h2 class="text-xs md:text-xl nature-txt-color font-medium">Tomato 500 g </h2>
+                                <h2 class="font-medium text-[0.625rem] md:text-base">$39.99</h2>
+                            </div>
+                        </div>
+                        <!-- =========pro 4 tomato end -->
+
+                        <!-- =========pro 1 start -->
+                        <div
+                            class="flex bg-white rounded-lg p-2 space-x-2 md:p-4 md:space-x-4 items-center hover:bg-[#3adb508f] cursor-pointer">
+                            <div class="bg-secondary-color rounded-xl flex justify-center items-center">
+                                <img src="c2-assets/onion.png" alt="">
+                            </div>
+                            <div>
+                                <p class="nature-txt-color text-[0.625rem] md:text-base"><i
+                                        class="text-[#FFC107] fa-solid fa-star"></i> 4.5</p>
+                                <h2 class="text-xs md:text-xl nature-txt-color font-medium">Onion 1 KG</h2>
+                                <h2 class="font-medium text-[0.625rem] md:text-base">$39.99</h2>
+                            </div>
+                        </div>
+                        <!-- =========pro 1 end -->
+
+                        <!-- =========pro 3 start -->
+                        <div
+                            class="flex bg-white rounded-lg p-2 space-x-2 md:p-4 md:space-x-4 items-center hover:bg-[#3adb508f] cursor-pointer">
+                            <div class="bg-secondary-color rounded-xl flex justify-center items-center">
+                                <img src="c2-assets/potato.png" alt="">
+                            </div>
+                            <div>
+                                <p class="nature-txt-color text-[0.625rem] md:text-base"><i
+                                        class="text-[#FFC107] fa-solid fa-star"></i> 4.5</p>
+                                <h2 class="text-xs md:text-xl nature-txt-color font-medium">Potato 1 KG </h2>
+                                <h2 class="font-medium text-[0.625rem] md:text-base">$39.99</h2>
+                            </div>
+                        </div>
+                        <!-- =========pro 3 end -->
+
+                        <!-- =========pro 3 start -->
+                        <div
+                            class="md:flex bg-white rounded-lg p-2 space-x-2 md:p-4 md:space-x-4 items-center hover:bg-[#3adb508f] cursor-pointer hidden">
+                            <div class="bg-secondary-color rounded-xl flex justify-center items-center">
+                                <img src="c2-assets/potato.png" alt="">
+                            </div>
+                            <div>
+                                <p class="nature-txt-color text-[0.625rem] md:text-base"><i
+                                        class="text-[#FFC107] fa-solid fa-star"></i> 4.5</p>
+                                <h2 class="text-xs md:text-xl nature-txt-color font-medium">Potato 1 KG </h2>
+                                <h2 class="font-medium text-[0.625rem] md:text-base">$39.99</h2>
+                            </div>
+                        </div>
+                        <!-- =========pro 3 end -->
+
+
+                    </div>
+
+                </div>
+            </section>
+        </div>
+
     </main>
 
     <footer>
