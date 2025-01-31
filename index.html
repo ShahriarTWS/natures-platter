@@ -11,7 +11,8 @@
     <!-- google font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap"
         rel="stylesheet">
 
     <style>
@@ -21,6 +22,10 @@
 
         .adlam-font {
             font-family: "ADLaM Display", serif;
+        }
+
+        .poppins-font {
+            font-family: "Poppins", serif;
         }
 
         @keyframes colorFade {
@@ -109,10 +114,12 @@
                         <ul class="hidden md:flex space-x-6 text-2xl items-center">
                             <li
                                 class="text-xl transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-105 hover:text-accent-color duration-300">
-                                <a href=""></a><i class="fa-solid fa-magnifying-glass"></i></li>
+                                <a href=""></a><i class="fa-solid fa-magnifying-glass"></i>
+                            </li>
                             <li
                                 class="text-xl transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-105 hover:text-accent-color duration-300">
-                                <a href=""></a><i class="fa-solid fa-cart-shopping"></i></li>
+                                <a href=""></a><i class="fa-solid fa-cart-shopping"></i>
+                            </li>
                             <li
                                 class="btn btn-outline px-7 py-2 border-accent-color text-nature-txt-color text-base hover:border-accent-color hover:bg-accent-color hover:text-white">
                                 <a href="">Login</a>
@@ -124,7 +131,7 @@
                         </ul>
                     </div>
                     <div class="md:hidden">
-                        <button class="text-3xl"><i class="fa-solid fa-bars"></i></button>
+                        <button class="text-3xl text-accent-color"><i class="fa-solid fa-bars"></i></button>
                     </div>
                 </div>
             </nav>
@@ -168,7 +175,7 @@
                             <h2 class="card-title text-nature-txt-color font-semibold text-xl md:text-2xl">24/7 Services
                             </h2>
                             <p class="font-light md:text-xl">We provide reliable, round-the-clock support, ensuring
-                                seamless service anytime, anywhere, every day.</p>
+                                seamless service anytime, anywhere.</p>
                         </div>
                     </div>
                 </div>
@@ -241,9 +248,9 @@
                             class="flex relative col-span-2 md:col-span-1 md:row-span-3 bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] rounded-lg p-2 md:p-8 md:space-x-4
                             transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-105 hover:bg-[#3adb508f] duration-300">
                             <div>
-                                <h2 class="text-white text-3xl adlam-font pt-8 pb-4">30% off</h2>
-                                <p>Discover a world of treats, toys, and essentials handpicked for </p>
-                                <a href=""><button class="btn mt-4 mb-28 md:text-xl">Buy Now</button></a>
+                                <h2 class="text-white text-2xl md:text-3xl adlam-font pt-6 md:pt-8 pb-4">30% off</h2>
+                                <p class="text-xs md:text-base w-3/4">Discover a world of treats, toys, and essentials handpicked for </p>
+                                <a href=""><button class="btn mt-4 mb-24 md:mb-28 md:text-xl">Buy Now</button></a>
                             </div>
                         </div>
                         <!-- =========vege -->
@@ -390,6 +397,56 @@
                 </div>
             </section>
         </div>
+
+        <!-- ============================ -->
+        <!-- offer section -->
+        <section class="w-[90%] md:w-[100%] md:container mx-auto pt-12 pb-12 md:pt-28 md:pb-28">
+            <h2 class="text-accent-color font-semibold text-2xl md:text-4xl ">Arrival & Offers</h2>
+            <div class="grid grid-cols-1 md:grid-cols-5 row-span-1 gap-6 poppins-font pt-8 md:pt-12">
+
+                <!-- ============================== -->
+                 <!-- product 1 -->
+                <div class="md:col-span-3">
+                    <div class="card card-side flex items-center justify-between bg-[#115414] shadow-xl h-full
+                    transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-105  duration-300">
+                        <div class="md:card-body ml-4 space-y-4">
+                            <img class="md:w-[50%] items-start pb-4" src="c2-assets/dawat-logo.png" alt="">
+                            <a class="pt-7 pb-6" href=""><button class="btn bg-[#63B76D] font-normal border-none text-white text-xs md:text-base px-10 hover:text-black">Cook Exotic Dishes</button></a>
+                            <p class="text-white text-xl md:text-4xl">UP to <b>20% OFF</b></p>
+
+                        </div>
+                        <figure class="items-end">
+                            <img class="pt-4 " src="c2-assets/dawat-mock-up.png" alt="Movie" />
+                        </figure>
+                    </div>
+                </div>
+                <!-- ============================== -->
+
+                <!-- ============================== -->
+                 <!-- product 2 -->
+                 <div class="md:col-span-2">
+                    <div class="card card-side flex items-center justify-between bg-[#102861] shadow-xl h-full
+                    transition ease-in-out delay-50  hover:-translate-y-1 hover:scale-105  duration-300">
+                        <div class="md:card-body ml-4 space-y-4">
+                            <img class=" items-start pb-4" src="c2-assets/india2.png" alt="">
+                            <a class="pt-7 pb-6" href=""><button class="btn bg-[#2A4D97] font-normal border-none text-white text-xs md:text-base px-10 hover:text-black">World’s No.1 Rice</button></a>
+                            <p class="text-white text-xl md:text-4xl">UP to <b>20% OFF</b></p>
+
+                        </div>
+                        <figure class="items-end">
+                            <img class="pt-4 " src="c2-assets/india-gate-mock-up2.png" alt="Movie" />
+                        </figure>
+                    </div>
+                </div>
+                <!-- ============================== -->
+
+                
+
+                
+
+            </div>
+        </section>
+        <!-- ============================ -->
 
     </main>
 
